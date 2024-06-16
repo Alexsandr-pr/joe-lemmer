@@ -46,6 +46,13 @@
   color: #00B2B1;
   font-size: 18px;
   font-weight: 500;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.footer__nav-link path {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .social__list {
@@ -77,6 +84,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.social__link path {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .header {
@@ -131,6 +145,8 @@
   color: #00B2B1;
   font-size: 20px;
   font-weight: 600;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .header._active .menu__list {
@@ -824,6 +840,8 @@ button {
   background: #F3F3F3;
   padding: 20px 24px;
   border: 2px solid transparent;
+  color: #222831;
+  font-weight: 500;
 }
 
 .form__input::-webkit-input-placeholder {
@@ -862,11 +880,13 @@ button {
 }
 
 .form__textarea {
+  font-weight: 500;
   border: 2px solid transparent;
   width: 100%;
   padding: 16px 24px;
   resize: none;
   height: 280px;
+  color: #222831;
   border-radius: 16px;
   background: #F3F3F3;
 }
@@ -962,6 +982,8 @@ button {
 }
 
 .forms-content__link {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -972,6 +994,11 @@ button {
   color: rgba(34, 40, 49, 0.5);
   font-size: 18px;
   font-weight: 700;
+}
+
+.forms-content__link path {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .forms-content__social .social__list {
@@ -1463,6 +1490,32 @@ button {
 }
 
 @media (hover: hover) {
+  .footer__nav-link:hover {
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .footer__nav-link:hover path {
+    stroke: #fff;
+    opacity: 1;
+  }
+
+  .social__link:hover {
+    cursor: pointer;
+    color: #fff;
+    background: #1A1C26;
+  }
+
+  .social__link:hover path {
+    stroke: #fff;
+    opacity: 1;
+  }
+
+  .menu__link:hover {
+    cursor: pointer;
+    color: #fff;
+  }
+
   .button:hover {
     cursor: pointer;
     color: #fff;
@@ -1471,6 +1524,16 @@ button {
 
   .button:hover path {
     stroke: #fff;
+    opacity: 1;
+  }
+
+  .forms-content__link:hover {
+    cursor: pointer;
+    color: #00B2B1;
+  }
+
+  .forms-content__link:hover path {
+    stroke: #00B2B1;
     opacity: 1;
   }
 }

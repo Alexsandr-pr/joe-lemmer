@@ -119,6 +119,13 @@
         @media(max-width:767.98px){
             font-size: 16px;
         }
+        transition: all 0.3s ease 0s;
+        @media(hover:hover) {
+            &:hover {
+            cursor: pointer;
+                color:#fff;
+            }
+        }
     }
 }
 

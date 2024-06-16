@@ -45,6 +45,20 @@
         color: #00B2B1;
         font-size: 18px;
         font-weight: 500;
+        transition: all 0.3s ease 0s;
+        path {
+            transition: all 0.3s ease 0s;
+        }
+        @media(hover:hover) {
+            &:hover {
+                cursor: pointer;
+                color:#fff;
+                path {
+                    stroke:#fff;
+                    opacity: 1;
+                }
+            }
+        }
     }
 
     // .footer__social
@@ -80,6 +94,21 @@
         height: 48px;
         justify-content: center;
         align-items: center;
+        transition: all 0.3s ease 0s;
+        path {
+            transition: all 0.3s ease 0s;
+        }
+        @media(hover:hover) {
+            &:hover {
+                cursor: pointer;
+                color:#fff;
+                background: #1A1C26;
+                path {
+                    stroke:#fff;
+                    opacity: 1;
+                }
+            }
+        }
     }
 }
 

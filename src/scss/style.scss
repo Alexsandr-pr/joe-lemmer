@@ -796,6 +796,8 @@ button {
         background: #F3F3F3;
         padding: 20px 24px;
         border: 2px solid transparent;
+        color: #222831;
+        font-weight: 500;
         &::placeholder {
             color: rgba(34, 40, 49, 0.50);
             font-size: 18px;
@@ -810,11 +812,13 @@ button {
     // .form__textarea
 
     &__textarea {
+        font-weight: 500;
         border: 2px solid transparent;
         width: 100%;
         padding: 16px 24px;
         resize: none;
         height: 280px;
+        color: #222831;
         border-radius: 16px;
         background: #F3F3F3;
         &::placeholder {
@@ -891,12 +895,26 @@ button {
     // .forms-content__link
 
     &__link {
+        transition: all 0.3s ease 0s;
         display: flex;
         align-items: center;
         gap: 18px;
         color: rgba(34, 40, 49, 0.50);
         font-size: 18px;
         font-weight: 700;
+        path {
+            transition: all 0.3s ease 0s;
+        }
+        @media(hover:hover) {
+            &:hover {
+                cursor: pointer;
+                color:#00B2B1;
+                path {
+                    stroke:#00B2B1;
+                    opacity: 1;
+                }
+            }
+        }
     }
 
     // .forms-content__social
